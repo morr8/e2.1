@@ -1,15 +1,18 @@
-//
-//  main.cpp
-//  e2.1
-//
-//  Created by Sergio campos on 5/24/19.
-//  Copyright © 2019 Sergio campos. All rights reserved.
-//
+/*
+ Write a program that displays the dimensions of a letter-size (8.5 × 11 inches) sheet of paper in millimeters. There are 25.4 millimeters per inch. Use constants and comments in your program.
+ */
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main()
+{
+    const float sheet_width = 8.5;
+    const float sheet_length = 11;
+    const float millimeters_to_inch = 25.4;
+    cout << "The dimensions of a letter-size (8.5 x 11 inches) sheet of paper in millimeters is" << endl;
+    cout << sheet_width * millimeters_to_inch << " x " << sheet_length * millimeters_to_inch << endl;
+    
     return 0;
 }
